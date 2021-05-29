@@ -61,6 +61,9 @@ Below is the template to define a container with specific image want to use in a
 
 ##### Pods
 Pods are the smallest deployable units of computing that contains one or more containers.
+Notes: In casee to create a Yaml template file without actually creating a pods.
+    
+    kubectl run nginx --image=busybox:latest --dry-run=client -o yaml
 
     kind: Pod
     apiVersion: v1
